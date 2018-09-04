@@ -1,0 +1,537 @@
+html, body{
+    width: 100%;
+    margin:0 auto;
+    padding:0;
+}
+/*navigation for whole page*/
+nav{
+    padding: 20px 6px;
+    width: 35%;
+    right:0;
+    top:0;
+    position: fixed;
+    z-index:1;
+    font-family:'Raleway', sans-serif;
+    color:white;
+}
+nav a{
+    text-decoration:none;
+    padding:10px 6px;
+}
+/*logo CSS*/
+nav .left{
+    left:0;
+    position:fixed;
+    top:0;
+    padding: 10px 6px;
+    z-index:1;
+}
+
+nav a:link{
+    text-decoration:none;
+}
+nav a:visited{
+    text-decoration:none;
+    color:white;
+}
+nav a:hover{
+    text-decoration:none;
+    color:grey;
+    transition: 0.2s ease-in;
+    border:thin solid white;
+}
+
+.left a{
+    border:none;
+    color:white;
+}
+/*Homepage CSS */
+.LandingPage{
+    background:url("../images/bandwcity.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 70%;
+    color:white;
+    text-align:center;
+    font-family:'Raleway', sans-serif;
+}
+.LandingPage h1{
+    position:absolute;
+    font-size:70px;
+    top:30%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%,-50%);
+}
+.LandingPage h2{
+    position:absolute;
+    font-size:50px;
+    top:40%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%,-50%);
+}
+.resume-button {
+    display: inline-block;
+    position:absolute;
+    top:50%;
+    left:38%;
+    margin: 5px;
+    background:transparent;
+    color:white;
+    font-size: 1.5em;
+    font-family:'Raleway', sans-serif;
+    padding: 8px 16px;
+    text-decoration:none;
+    border: thin solid white;
+    transition-duration: 0.4s;
+}
+.contact-button{
+    display: inline-block;
+    position:absolute;
+    top:50%;
+    margin: 5px;
+    background:transparent;
+    color:white;
+    font-size: 1.5em;
+    font-family:'Raleway', sans-serif;
+    padding: 8px 16px;
+    text-decoration:none;
+    border: thin solid white;
+    transition-duration:none;
+}
+.resume-button a:link{
+    text-decoration:none;
+}
+.resume-button a:visited{
+    text-decoration:none;
+}
+.resume-button:hover {
+    text-decoration:none;
+    color:grey;
+    border:none;
+}
+.resume-button a:active{
+    text-decoration:none;
+    
+}
+.contact-button a:link{
+    text-decoration:none;
+}
+.contact-button a:visited{
+    text-decoration:none;
+}
+.contact-button:hover {
+    text-decoration:none;
+    color:grey;
+    border:none;
+}
+.contact-button a:active{
+    text-decoration:none;
+    border:none;
+}
+/*Portfolio page css*/
+.portfolio{
+    display: grid;
+    width: 100%;
+    background:url("../images/IMG_1781_copy.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.portfolio h1{
+    text-align: center;
+}
+.portfolio ul{
+    column-count:2;
+    column-gap: 20%;
+    text-align:left;
+    margin-left: 20%;
+    margin-right:20%;
+}
+/*About CSS*/
+.about{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    background:url("../images/IMG_1781_copy.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+/*Resume CSS*/
+#resumecontainer{
+    background:url("../images/resumebackground.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%;
+}
+#resumecontainer h1{
+    font-size:70px;
+}
+#resumelanding{
+    display:flex;
+    justify-content:center;
+    padding-bottom:70%; 
+}
+#resumelanding h1{
+    display:flex;
+    justify-content:center;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    position:absolute;
+    font-size:90px;
+    top:40%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%,-50%);
+}
+.sidenav{
+    height:100%;
+    width:160px;
+    position:fixed;
+    z-index:1;
+    top:40%;
+    left:0;
+    background:transparent;
+}
+.sidenav a{
+    text-decoration:none;
+    font-size:25px;
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
+    color:white;
+    padding:0px 16px;
+}
+.sidenav a:visited{
+    text-decoration:none;
+    color:white;
+}
+.sidenav a:hover{
+    text-decoration:none;
+    color:grey;
+    transition: 0.2s ease-in;
+    border:thin solid white;
+}
+
+#skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color:white;
+    font-family:'Raleway', sans-serif;
+    margin-left:160px;
+    font-size:30px;
+}
+.skills-1{
+    grid-column:1/4;
+    grid-row:1/1;
+    justify-self:center;
+}
+.skills-2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/3;
+    grid-row: 2/2;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.skills-3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:3/4;
+    grid-row:2/2;
+    background:rgba(63, 63, 63, 0.8);
+    text-align:center;
+
+}
+.skills-4{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/2;
+    grid-row:3/3;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.skills-5{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:2/4;
+    grid-row:3/3;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.skills-6{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/3;
+    grid-row:4/4;
+    background:rgb(63, 63, 63, 0.8);
+    text-align:center;
+}
+.skills-7{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:3/4;
+    grid-row:4/4;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.skills-8{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/2;
+    grid-row:5/5;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.skills-9{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:2/4;
+    grid-row:5/5;
+    background:rgb(63, 63, 63, 0.8);
+    text-align:center;
+}
+.skills-10{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/3;
+    grid-row:6/6;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.skills-11{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column: 3/4;
+    grid-row: 6/6;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+#experience{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color:white;
+    font-family:'Raleway', sans-serif;
+    margin-left:160px;
+    font-size:30px;
+}
+.experience-1{
+    display:flex;
+    grid-column:1/4;
+    grid-row:1/1;
+    justify-self:center;
+}
+.experience-2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/3;
+    grid-row: 2/2;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.experience-3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:3/4;
+    grid-row:2/2;
+    background:rgba(63, 63, 63, 0.8);
+    text-align:center;
+}
+.experience-4{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/2;
+    grid-row:3/3;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.experience-5{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:2/3;
+    grid-row:3/3;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.experience-6{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:3/4;
+    grid-row:3/3;
+    background:rgb(63, 63, 63, 0.8);
+    text-align:center;
+}
+.experience-7{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/3;
+    grid-row:4/4;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.experience-8{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:3/4;
+    grid-row:4/4;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+.experience-9{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1/2;
+    grid-row:5/5;
+    background:rgb(63, 63, 63, 0.8);
+    text-align:center;
+
+}
+.experience-10{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:2/3;
+    grid-row:5/5;
+    background:rgba(4, 4, 4, 0.8);
+    text-align:center;
+}
+.experience-11{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column: 3/4;
+    grid-row: 5/5;
+    background: rgb(38,38,38,0.8);
+    text-align:center;
+}
+#education{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color:white;
+    font-family:'Raleway', sans-serif;
+    margin-left:160px;
+    font-size:30px;
+}
+.education-1{
+    display:flex;
+    grid-column:1/4;
+    grid-row:1/1;
+    justify-self:center;
+}
+.education-2{
+    display:flex;
+    grid-column:1/2;
+    grid-row:2/2;
+    justify-content:center;
+    align-items:center;
+    background: rgb(38,38,38,0.8);
+}
+.education-3{
+    display:flex;
+    grid-column:2/4;
+    grid-row:2/2;
+    justify-content:center;
+    align-items:center;
+    background:rgb(63, 63, 63, 0.8);
+}
+.education-4{
+    display:flex;
+    grid-column:1/2;
+    grid-row:3/3;
+    justify-content:center;
+    align-items:center;
+    background:rgba(4, 4, 4, 0.8);
+}
+.education-5{
+    display:flex;
+    grid-column:2/4;
+    grid-row:3/3;
+    justify-content:center;
+    align-items:center;
+    background: rgb(38,38,38,0.8);
+}
+#volunteer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    color:white;
+    font-family:'Raleway', sans-serif;
+    margin-left:160px;
+    font-size:30px;
+}
+.volunteer-1{
+    display:flex;
+    grid-column:1/4;
+    grid-row:1/1;
+    justify-self:center;
+}
+.volunteer-2{
+    display:flex;
+    grid-column:1/2;
+    grid-row:2/2;
+    justify-content:center;
+    align-items:center;
+    background: rgb(38,38,38,0.8);
+}
+.volunteer-3{
+    display:flex;
+    grid-column:2/3;
+    grid-row:2/2;
+    justify-content:center;
+    align-items:center;
+    background:rgb(63, 63, 63, 0.8);
+}
+.volunteer-4{
+    display:flex;
+    grid-column:3/4;
+    grid-row:2/2;
+    justify-content:center;
+    align-items:center;
+    background:rgba(4, 4, 4, 0.8);
+}
+/*Contact CSS*/
+.contact{
+    display: grid;
+    width: 100%;
+    background:url("../images/IMG_1781_copy.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
